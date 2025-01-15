@@ -1,0 +1,6 @@
+@media (max-width: 900px) {
+    body {
+        font: var(--h1-mobile);
+        color: red;
+    }
+}
