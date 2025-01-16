@@ -1,0 +1,129 @@
+.section-prices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 3.2rem;
+    padding: 8rem 3.2rem;
+
+    .section-prices-title {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+
+        gap: 0.8rem;
+        width: 70%;
+
+        p {
+            font: var(--span-desktop);
+            color: var(--brand-color-primary);
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font: var(--h2-desktop);
+            color: var(--text-color-primary);
+        }
+    }
+
+    .section-prices-options {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 3.2rem;
+
+        .section-prices-options-basic {
+            background-color: var(--surface-color);
+            border: 1px solid var(--stroke-color);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            gap: 3.2rem;
+            padding: 3.2rem;
+            border-radius: 2.4rem;
+
+            .section-prices-options-basic-top {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                gap: 2.4rem;
+
+                .section-prices-options-basic-top-text {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 90%;
+
+                    gap: 0.4rem;
+
+                    h6 {
+                        font: var(--text-desktop-var);
+                        color: var(--text-color-primary);
+                    }
+
+                    p {
+                        font: var(--paragraph-desktop);
+                        color: var(--text-color-secondary);
+                    }
+                }
+
+                h4 {
+                    font: var(--h2-desktop);
+                    color: var(--text-color-primary);
+                }
+
+                button {
+                    background-color: var(--surface-color);
+                    border: 1px solid var(--text-color-primary);
+                    padding: 1.2rem 2.4rem;
+                    color: var(--text-color-primary);
+                    border-radius: 0.8rem;
+                }
+
+                button:hover {
+                    background: var(--brand-gradient);
+                    border: 1px solid var(--brand-gradient);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    border: 1px solid;
+                    border-image-source: var(--brand-gradient);
+                    border-image-slice: 1;
+                    cursor: pointer;
+                }
+            }
+
+            .section-prices-options-basic-dash {
+                display: flex;
+                content: "";
+                width: 80%;
+                height: 1px;
+                background: linear-gradient(90deg, #a1a1aa00 0%, #A1A1AA 50%, #a1a1aa00 100%);
+            }
+
+            .section-prices-options-basic-options {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-self: flex-start;
+
+                gap: 1.6rem;
+
+                .section-prices-options-basic-options-item {
+                    display: flex;
+                    align-items: center;
+
+                    gap: 0.8rem;
+                    font: var(--paragraph-desktop);
+                }
+            }
+        }
+    }
+}
