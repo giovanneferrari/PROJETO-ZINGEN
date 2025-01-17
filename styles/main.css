@@ -1,4 +1,5 @@
-.container {
+@media (min-width: 376px) {
+    .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,6 +57,15 @@
             background-color: transparent;
             font: var(--text-desktop);
             color: var(--text-color-primary);
+
+            border-radius: 8px; /* Define o border-radius */
+            text-align: center;
+            overflow: hidden; /* Garante que o pseudo-elemento não saia dos limites */
+            transition: all 0.3s ease; /* Transição suave */
+            z-index: 1;
+
+            position: relative;
+            display: inline-block;
         }
 
         .button-one:hover {
@@ -67,6 +77,8 @@
             border-image-source: var(--brand-gradient);
             border-image-slice: 1;
             cursor: pointer;
+            scale: 1.1;
+            transition: 0.3s ease;
         }
 
         .button-two {
@@ -79,12 +91,14 @@
             background: var(--brand-gradient);
             cursor: pointer;
             color: white;
+            scale: 1.1;
+            transition: 0.3s ease;
         }
         
     }
-}
+    }
 
-.section-introduction {
+    .section-introduction {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,9 +135,9 @@
     img {
         width: 544px;
     }
-}
+    }
 
-.section-informations {
+    .section-informations {
     display: grid;
     padding: 8rem 3.2rem;
 
@@ -313,5 +327,6 @@
         img {
             height: 48.5rem;
         }
+    }
     }
 }

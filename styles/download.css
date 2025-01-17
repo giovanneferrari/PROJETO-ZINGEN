@@ -1,0 +1,63 @@
+@media (min-width: 376px) {
+    .section-download {
+        padding: 8rem 3.2rem;
+
+        .section-download-container {
+            display: flex;
+            background-color: var(--surface-color);
+
+            border-radius: 2.4rem;
+
+            position: relative;
+
+            .section-download-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 67%;
+
+                padding: 14rem 8rem;
+                gap: 4rem;
+
+                .section-download-content-text {
+                    display: flex;
+                    flex-direction: column;
+
+                    gap: 0.8rem;
+
+                    span {
+                        font: var(--span-desktop);
+                        color: var(--brand-color-primary);
+                        text-transform: uppercase;
+                    }
+
+                    h2 {
+                        font: var(--h2-desktop);
+                        color: var(--text-color-primary);
+                    }
+
+                    p {
+                        font: var(--paragraph-desktop);
+                        color: var(--text-color-secondary);
+                    }
+                }
+
+                .section-download-content-buttons {
+                    display: flex;
+                    gap: 1.5rem;
+
+                    svg:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            img {
+                height: 62.7rem;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}

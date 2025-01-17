@@ -1,0 +1,73 @@
+footer {
+    display: flex;
+    flex-direction: column;
+
+    padding: 8rem 3.2rem 3.2rem 3.2rem;
+    gap: 8rem;
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            height: 2.2rem;
+        }
+
+        .links-uteis {
+            display: flex;
+            
+            gap: 9rem;
+
+            .links-uteis-topics {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                margin-right: 3rem;
+
+                label {
+                    font: var(--span-desktop-reg);
+                    color: var(--brand-color-primary);
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font: var(--paragraph-desktop);
+                    font-weight: 500;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--text-color-secondary);
+                    }
+
+                    a:hover {
+                        background: var(--brand-gradient);
+                        background-clip: text; /* Aplica o fundo somente no texto */
+                        -webkit-text-fill-color: transparent; /* Faz o texto transparente */
+                        transition: 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+
+    .redes-sociais {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .redes-sociais-icons {
+            display: flex;
+            gap: 2.4rem;
+
+            svg:hover {
+                cursor: pointer;
+
+                path {
+                    fill: var(--brand-color-primary);
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+}
