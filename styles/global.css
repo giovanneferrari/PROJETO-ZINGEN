@@ -25,6 +25,7 @@
     --h3-mobile: 800 2rem/120% var(--font);
     --h3-mobile-med: 500 2rem/140% var(--font);
     --span-mobile: 500 1.4rem var(--font);
+    --span-mobile-reg: 1.4rem var(--font);
     --paragraph-mobile: 1.6rem/160% var(--font);
 
     --brand-gradient: linear-gradient(90deg, #FC4A1A 0%, #F7B733 100%);

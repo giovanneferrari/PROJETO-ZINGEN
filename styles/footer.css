@@ -2,21 +2,23 @@ footer {
     display: flex;
     flex-direction: column;
 
-    padding: 8rem 3.2rem 3.2rem 3.2rem;
-    gap: 8rem;
+    padding: 4.88rem 3.2rem 2.4rem 3.2rem;
+    gap: 4.8rem;
 
     .links {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 6.4rem;
 
         img {
-            height: 2.2rem;
+            width: 8.5rem;
         }
 
         .links-uteis {
             display: flex;
+            flex-direction: column;
             
-            gap: 9rem;
+            gap: 6.4rem;
 
             .links-uteis-topics {
                 display: flex;
@@ -52,9 +54,9 @@ footer {
 
     .redes-sociais {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-
+        justify-content: center;
+        flex-direction: column;
+        gap: 2.4rem;
 
         .redes-sociais-icons {
             display: flex;
@@ -64,10 +66,14 @@ footer {
                 cursor: pointer;
 
                 path {
-                    fill: var(--brand-color-primary);
+                    fill: url(#paint0_linear_2230_404);
                     transition: 0.3s ease;
                 }
             }
+        }
+
+        p {
+            font: var(--span-mobile-reg);
         }
     }
 }

@@ -49,16 +49,15 @@
         button {
             border: none;
             padding: 1.6rem 3.2rem;
-            border-radius: 0.8rem;
         }
 
         .button-one {
             border: 1px solid var(--text-color-primary);
-            background-color: transparent;
+            background: transparent;
             font: var(--text-desktop);
             color: var(--text-color-primary);
 
-            border-radius: 8px; /* Define o border-radius */
+            border-radius: .5rem;
             text-align: center;
             overflow: hidden; /* Garante que o pseudo-elemento não saia dos limites */
             transition: all 0.3s ease; /* Transição suave */
@@ -66,25 +65,41 @@
 
             position: relative;
             display: inline-block;
+
+            &::after {
+                content: attr(aria-label);
+                background: var(--brand-gradient);
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
         }
 
         .button-one:hover {
             background: var(--brand-gradient);
-            border: 1px solid var(--brand-gradient);
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            border: 1px solid;
+            
             border-image-source: var(--brand-gradient);
             border-image-slice: 1;
+            
             cursor: pointer;
             scale: 1.1;
             transition: 0.3s ease;
+        }
+
+        .button-one:hover {
+            background: var(--brand-gradient);
+            background-clip: text;
+            color: white;
+
+            cursor: pointer;
         }
 
         .button-two {
             background-color: var(--text-color-primary);
             font: var(--text-desktop);
             color: var(--background-color);
+            border-radius: 0.5rem;
         }
 
         .button-two:hover {
@@ -103,7 +118,7 @@
     align-items: center;
     justify-content: center;
 
-    padding: 8rem 3.2rem;
+    padding: 4.8rem 2.4rem;
     gap: 3.2rem;
 
     background-color: var(--surface-color);
@@ -139,7 +154,7 @@
 
     .section-informations {
     display: grid;
-    padding: 8rem 3.2rem;
+    padding: 4.8rem 2.4rem;
 
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat (2, 1fr);

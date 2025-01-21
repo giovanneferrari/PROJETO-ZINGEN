@@ -1,5 +1,5 @@
 @import url(./global.css);
-@import url(./nav.css);
+@import url(./header.css);
 @import url(./main.css);
 @import url(./price.css);
 @import url(./download.css);
@@ -9,6 +9,7 @@
         background: var(--background-color);
         width: 99vw;
         height: 100vh;
+        margin: auto;
         color: var(--text-color-secondary);
         max-width: 1280px;
     }
