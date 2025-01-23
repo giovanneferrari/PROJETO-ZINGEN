@@ -1,4 +1,4 @@
-@media (min-width: 376px) {
+@media (min-width: 431px) {
     .container {
     display: flex;
     flex-direction: column;
@@ -118,7 +118,7 @@
     align-items: center;
     justify-content: center;
 
-    padding: 4.8rem 2.4rem;
+    padding: 4rem 2.4rem 8rem 2.4rem;
     gap: 3.2rem;
 
     background-color: var(--surface-color);
@@ -154,7 +154,7 @@
 
     .section-informations {
     display: grid;
-    padding: 4.8rem 2.4rem;
+    padding: 8rem 2.4rem;
 
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat (2, 1fr);

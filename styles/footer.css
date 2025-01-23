@@ -1,79 +1,79 @@
-footer {
-    display: flex;
-    flex-direction: column;
-
-    padding: 4.88rem 3.2rem 2.4rem 3.2rem;
-    gap: 4.8rem;
-
-    .links {
+@media (min-width: 431px) {
+    footer {
         display: flex;
         flex-direction: column;
-        gap: 6.4rem;
 
-        img {
-            width: 8.5rem;
-        }
+        padding: 8rem 3.2rem 3.2rem 3.2rem;
+        gap: 4.8rem;
 
-        .links-uteis {
+        .links {
             display: flex;
-            flex-direction: column;
-            
+            justify-content: space-between;
             gap: 6.4rem;
 
-            .links-uteis-topics {
+            img {
+                width: 8.5rem;
+                height: 3.2rem;
+            }
+
+            .links-uteis {
                 display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                margin-right: 3rem;
+                gap: 6.4rem;
 
-                label {
-                    font: var(--span-desktop-reg);
-                    color: var(--brand-color-primary);
-                    text-transform: uppercase;
-                }
+                .links-uteis-topics {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    margin-right: 3rem;
 
-                p {
-                    font: var(--paragraph-desktop);
-                    font-weight: 500;
-
-                    a {
-                        text-decoration: none;
-                        color: var(--text-color-secondary);
+                    label {
+                        font: var(--span-desktop-reg);
+                        color: var(--brand-color-primary);
+                        text-transform: uppercase;
                     }
 
-                    a:hover {
-                        background: var(--brand-gradient);
-                        background-clip: text; /* Aplica o fundo somente no texto */
-                        -webkit-text-fill-color: transparent; /* Faz o texto transparente */
+                    p {
+                        font: var(--paragraph-desktop);
+                        font-weight: 500;
+
+                        a {
+                            text-decoration: none;
+                            color: var(--text-color-secondary);
+                        }
+
+                        a:hover {
+                            background: var(--brand-gradient);
+                            background-clip: text; /* Aplica o fundo somente no texto */
+                            -webkit-text-fill-color: transparent; /* Faz o texto transparente */
+                            transition: 0.3s ease;
+                        }
+                    }
+                }
+            }
+        }
+
+        .redes-sociais {
+            display: flex;
+            justify-content: space-between;
+            gap: 2.4rem;
+
+            .redes-sociais-icons {
+                display: flex;
+                gap: 2.4rem;
+
+                svg:hover {
+                    cursor: pointer;
+
+                    path {
+                        fill: url(#paint0_linear_2230_404);
                         transition: 0.3s ease;
                     }
                 }
             }
-        }
-    }
 
-    .redes-sociais {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 2.4rem;
-
-        .redes-sociais-icons {
-            display: flex;
-            gap: 2.4rem;
-
-            svg:hover {
-                cursor: pointer;
-
-                path {
-                    fill: url(#paint0_linear_2230_404);
-                    transition: 0.3s ease;
-                }
+            p {
+                font: var(--span-mobile-reg);
             }
-        }
-
-        p {
-            font: var(--span-mobile-reg);
         }
     }
 }
