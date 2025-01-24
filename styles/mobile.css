@@ -870,7 +870,7 @@
     }
 }
 
-@media (min-width: 376px) and (max-width: 430px) {
+@media (min-width: 376px) and (max-width: 440px) {
 
     body {
         background: var(--background-color);
