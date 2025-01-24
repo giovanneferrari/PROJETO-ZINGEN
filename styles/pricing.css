@@ -47,7 +47,7 @@
                 flex-direction: column;
 
                 gap: 2.4rem;
-                padding: 7.2rem 3.2rem;
+                padding: 3.2rem;
                 border-radius: 2.4rem;
                 max-height: 48rem;
 
@@ -80,6 +80,13 @@
                     h4 {
                         font: var(--h2-desktop-bold);
                         color: var(--text-color-primary);
+                    }
+
+                    button {
+                        background-color: var(--surface-color);
+                        padding: 1.2rem 2.4rem;
+                        color: var(--text-color-primary);
+                        position: relative;
                     }
 
                     button {
@@ -132,9 +139,6 @@
 
             .section-prices-options-premium {
                 background-color: var(--surface-color);
-                border: 2px solid transparent;
-                border-image: var(--brand-gradient);
-                border-image-slice: 1;
 
                 display: flex;
                 align-items: center;
@@ -157,11 +161,21 @@
                     font-weight: 700;
                     padding: 1.2rem 3.2rem;
 
-                    border-radius: 0 0 2.4rem 0;
+                    border-radius: 2rem 0 2rem 0;
 
                     position: absolute;
-                    top: 0;
-                    left: 0;
+                    top: -3px;
+                    left: -0.2px;
+                }
+
+                &::before {
+                    content: "";
+                    transform: scale(1.01);
+                    background: var(--brand-gradient);
+                    position: absolute;
+                    inset: 0;
+                    border-radius: inherit;
+                    z-index: -1;
                 }
 
                 .section-prices-options-premium-top {
