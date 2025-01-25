@@ -38,3 +38,7 @@
     --text-color-secondary: #A1A1AA;
     --text-color-primary: #F4F4F5;
 }
+
+html {
+    scroll-behavior: smooth;
+}

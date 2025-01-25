@@ -12,4 +12,5 @@
         margin: auto;
         color: var(--text-color-secondary);
         max-width: 1280px;
+        overflow-x: hidden;
     }
